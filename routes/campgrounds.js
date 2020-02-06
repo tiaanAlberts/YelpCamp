@@ -23,8 +23,8 @@ var upload = multer({ storage: storage, fileFilter: imageFilter})
 var cloudinary = require('cloudinary');
 cloudinary.config({ 
     cloud_name: 'dssrf4cyb', 
-    api_key: '688467674597379', 
-    api_secret: 'FfhVAy1WA3xBYGaS_nGj4PAEdb4'
+    api_key: process.env.CLOUDINARY_API_KEY, 
+    api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
 // Define escapeRegex function for search feature

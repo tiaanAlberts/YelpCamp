@@ -1,0 +1,35 @@
+<% include ./partials/header %>
+    <div class="row">
+        <div class="col-md-12">
+            <form action="/register" method="post" class="form-signin">
+                <h1 class="h3 mb-3 display-4">Sign Up</h1>
+                <label for="inputUsername" class="sr-only"></label>
+                <input id="inputUsername" class="form-control" type="text" name="username" placeholder="username">
+                
+                <label for="inputPassword" class="sr-only"></label>
+                <input id="inputPassword" class="form-control" type="password" name="password" placeholder="password">
+                
+                <label for="inputFirstName" class="sr-only"></label>
+                <input id="inputFirstName" class="form-control" type="text" name="firstName" placeholder="first name">
+                
+                <label for="inputLastName" class="sr-only"></label>
+                <input id="inputLastName" class="form-control" type="text" name="lastName" placeholder="last Name">
+                
+                <label for="inputEmail" class="sr-only"></label>
+                <input id="inputEmail" class="form-control" type="text" name="email" placeholder="john@doe.com">
+                
+                <label for="inputAvatar" class="sr-only"></label>
+                <input id="inputAvatar" class="form-control" type="text" name="avatar" placeholder="avatar url">
+                
+                <label for="inputAdminCode"></label>
+                <input id="inputAdminCode" class="form-control" type="text" name="adminCode" placeholder="admin use only">
+                
+                <button class="btn btn-lg btn-primary btn-block">Sign Up!</button>
+            </form>
+            <div class="form-signin">
+                <a href="/campgrounds">Go Back</a>
+            </div>
+        </div>
+    </div>
+<% include ./partials/footer %>
+

@@ -27,7 +27,8 @@ mongoose.set('useUnifiedTopology', true); //DepreciationWarnign: Current server 
 mongoose.set('useFindAndModify', false); //DepreciationWarning: findById
 // mongoose.connect('mongodb://localhost:27017/yelp_camp_v11', { useNewUrlParser: true }); //connect to db
 // mongoose.connect('mongodb+srv://tiaan251:tiaan251@cluster0-mu4ir.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true }); //connect to db
-mongoose.connect(process.env.DATABASEURL);
+var url = process.env.DATABASEURL || 'mongodb:localhost:27017/yelp_camp_v11';
+mongoose.connect(url);
 // assign mongoose promise library and connect to database
 // mongoose.Promise = global.Promise;
 
